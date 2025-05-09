@@ -1,17 +1,12 @@
 ## Экспортер метрик GPU в Prometheus
 
-
-![alt text](https://gitflic.ru/project/amazing-hash/gpu-prometheus-exporter/blob/raw?file=screenshot.png&commit=71e3e22cb9d60bfe18a14b780f6cac14355a4bb9)
-
-Дашборд json: https://gitflic.ru/project/kedess/gpu-prometheus-exporter/blob?file=nvidia-gpu-metrics.json
-
 ### Сборка и запуск:
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://gitflic.ru/project/kedess/gpu-prometheus-exporter.git
 cd gpu-prometheus-exporter
 cargo build --release
-./target/release/gpu-prometheus-exporter 
+./target/release/gpu-prometheus-exporter
 ```
 
 ### Установка в виде сервиса:
