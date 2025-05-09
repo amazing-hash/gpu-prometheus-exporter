@@ -1,0 +1,17 @@
+[package]
+name = "gpu-prometheus-exporter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prometheus = "0.13.1"
+lazy_static = "1.4.0"
+
+axum = {git = "https://github.com/tokio-rs/axum.git", tag = "axum-v0.5.6"}
+tokio = {version = "1", features = ["full"]}
+tracing = "0.1"
+tracing-subscriber = {version = "0.3", features = ["env-filter"]}
+
+anyhow = "1.0"
